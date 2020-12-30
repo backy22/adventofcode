@@ -1,4 +1,3 @@
-const { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } = require('constants');
 const fs = require('fs');
 const lines = fs.readFileSync('input.text', {encoding: 'utf-8'}).split('\n')
 
@@ -14,7 +13,7 @@ for(let i=0; i<ids.length; i++) {
 console.log(hash)
 
 let founded = false
-let time = large*95 + hash[large]
+let time = large + hash[large]
 let step = large
 
 while(!founded) {
