@@ -1,5 +1,4 @@
 const fs = require('fs');
-const { parse } = require('path');
 const lines = fs.readFileSync('input.text', {encoding: 'utf-8'}).split('\n\n')
 
 var ranges = lines[0].split('\n')
